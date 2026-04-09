@@ -1,6 +1,6 @@
 # 🚗 Lane Detection System v2 - ROI Adaptativa
 
-Este repositorio contiene un sistema de detección de carriles optimizado para visión artificial en tiempo real, diseñado específicamente para funcionar en dispositivos de recursos limitados como la **Orange Pi One** o **Raspberry Pi**.
+Este repositorio contiene un sistema de detección de carriles optimizado para visión artificial en tiempo real, diseñado específicamente para funcionar en dispositivos de recursos limitados como la **Raspberry Pi**.
 
 ---
 
@@ -16,7 +16,7 @@ Este repositorio contiene un sistema de detección de carriles optimizado para v
   Filtros HSV configurados para detectar líneas blancas y amarillas en diversas condiciones de iluminación.
 
 - **Alertas en Tiempo Real**  
-  Detecta estados de *"Pisando línea"* o *"Salida de carril"* con soporte para feedback sonoro (Buzzer).
+  Detecta estados de *"Pisando línea"* o *"Salida de carril"*.
 
 ---
 
