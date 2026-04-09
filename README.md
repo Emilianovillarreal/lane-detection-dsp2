@@ -1,21 +1,27 @@
-# Lane Detection using Hough Transform
+# 🚗 Lane Detection System v2 - ROI Adaptativa
 
-Proyecto de detección de carriles para la materia DSP II.
+Este repositorio contiene un sistema de detección de carriles optimizado para visión artificial en tiempo real, diseñado específicamente para funcionar en dispositivos de recursos limitados como la **Orange Pi One** o **Raspberry Pi**.
 
-## Descripción
-El sistema detecta carriles viales en video utilizando:
-- ROI trapezoidal
-- Espacio de color HSV
-- Transformada de Hough probabilística
-- Análisis temporal para detección de pérdida de carril
+---
 
-Incluye un umbral adaptativo para diferenciar líneas discontinuas normales de desvíos reales.
+## 🚀 Características principales
 
-## Tecnologías
-- Python
-- OpenCV
-- NumPy
+- **ROI Dinámica y Adaptativa**  
+  El sistema ajusta el área de interés (*Region of Interest*) basándose en la última posición conocida de las líneas, optimizando el uso de CPU.
 
-## Ejecución
+- **Memoria de Carril**  
+  Implementa un contador de frames para mantener la trayectoria incluso si las líneas desaparecen brevemente (hasta 25 frames).
+
+- **Segmentación de Color**  
+  Filtros HSV configurados para detectar líneas blancas y amarillas en diversas condiciones de iluminación.
+
+- **Alertas en Tiempo Real**  
+  Detecta estados de *"Pisando línea"* o *"Salida de carril"* con soporte para feedback sonoro (Buzzer).
+
+---
+
+## 🛠 Instalación y Uso
+
+### 1. Clonar el repositorio
 ```bash
-python lane_detection_hough_trapezoidal_roi.py
+git clone https://github.com/tu-usuario/tu-repo.git
